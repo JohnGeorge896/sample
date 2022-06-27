@@ -1,3 +1,5 @@
+// editing to test pull request
+
 import { StyleSheet, Text, View, KeyboardAvoidingView,TextInput, TouchableOpacity,ActivityIndicator, Alert, Keyboard } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import {auth} from '../api/firebase'
