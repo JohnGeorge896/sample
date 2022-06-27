@@ -17,17 +17,8 @@ const LogScreen = () => {
     const[password,setPassword] =useState('')
     const[copassword,setCoPassword] =useState('')
     const[isRegister,setRegister] = useState(false)
-    // useEffect(()=>{
-    //     const unsubscribe = auth.onAuthStateChanged(user=>{
-    //         if(user){
-    //             navigation.replace("Home")
-    //         }
-    //     })
-    //     return unsubscribe
-    // },[])
 
     useEffect(()=>{
-        //console.log(count)
         async function initialize(){
             let em = await SecureStore.getItemAsync('email');
             let pass = await SecureStore.getItemAsync('password');
